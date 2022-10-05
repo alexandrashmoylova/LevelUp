@@ -11,17 +11,89 @@
   <body>
       <header class="header">
         <div class="header__wrapper">
-          <!-- <video preload="auto" autoplay muted loop width="100%"></video>
-          <source src="./video/holding-hands.mp4" type="video/mp4"> -->
+          <video preload="auto" autoplay="" muted="" loop="" width="100%">
+            <source src="/src/video/abstract.mp4" type="video/mp4">
+          </video>
         </div>
       </header>
-      <section class="hero">
         <div class="hero__wrapper">
           <h1 class="hero__title">Level Up</h1>
           <div class="hero__container">
-            <img src="img/prod.png" alt="Изображение средства для повышения потенции Level Up">
+            <img src="/src/img/prod.png" alt="Изображение средства для повышения потенции Level Up" width="160" height="210">
           </div>
+          <ul class="hero__list">
+            <li class="hero__item">
+              <h2 class="hero__title">Всего одна таблеточка и вы во все оружия!</h2>
+            </li>
+            <li class="hero__item">
+              <h2 class="hero__title">Абсолютно безопасен для вашего здоровья, полностью натуральный состав</h2>
+            </li>
+            <li class="hero__item">
+              <h2 class="hero__title">Нормализует гормональный фон</h2>
+            </li>
+            <a class="hero__button button" href="#">Заказать</a>
         </div>
-      </section>
+        <section class="ingredients">
+          <div class="ingredients__wrapper">
+            <div class="ingredients-list">
+              <div></div>
+              <figure class="ingredients-list__item">
+                <img src="/src/img/ginseng.png" width="100" height="100" alt="Изображение женьшеня">
+                <figcaption class="ingredients-list__title">Экстракт женьшеня</figcaption>
+              </figure>
+              <figure class="ingredients-list__item">
+                <img src="/src/img/juniper.png" width="100" height="100" alt="Изображение можжевельника">
+                <figcaption class="ingredients-list__title">Можжевельника Плоды</figcaption>
+              </figure>
+              <figure class="ingredients-list__item">
+                <img src="/src/img/lemongrass.png" width="100" height="100" alt="Изображение лимонника">
+                <figcaption class="ingredients-list__title">Лимонник</figcaption>
+              </figure>
+              <div class="ingredients-list__img">
+                <img src="/src/img/prod.png" alt="Изображение средства для повышения потенции Level Up" width="300" height="480">
+              </div>
+              <figure class="ingredients-list__item">
+                <img src="/src/img/shitake.png" width="100" height="100" alt="Изображение грибов шитаке">
+                <figcaption class="ingredients-list__title">Шиитаке</figcaption>
+              </figure>
+              <figure class="ingredients-list__item">
+                <img src="/src/img/fern.png" width="100" height="100" alt="Изображение папоротника">
+                <figcaption class="ingredients-list__title">Папоротник</figcaption>
+              </figure>
+              <figure class="ingredients-list__item">
+                <img src="/src/img/nutmeg.png" width="100" height="100" alt="Изображение мускатного ореха">
+                <figcaption class="ingredients-list__title">Концентрат Мускатного Ореха</figcaption>
+              </figure>
+            </div>
+            <a class="hero__button button" href="#">Заказать</a>
+          </div>
+        </section>
+        <section class="reviews">
+          <div class="reviews__wrapper">
+            <ul class="reviews-list">
+              <li class="reviews-list__item">
+                <img src="/src/img/man.png" alt="Андрей Паньков" width="80" height="80">
+                <span class="reviws-list__name">Андрей Паньков</span>
+                  <p class="reviews-list__text">Невероятное средство, помогло мне в трудной ситации, спасибо большое производителю, рекомендую всем!</p>
+              </li>
+              <li class="reviews-list__item">
+                <img src="/src/img/woman.png" alt="Наталья Уткина" width="80" height="80">
+                <span class="reviws-list__name">Наталья Уткина</span>
+                  <p class="reviews-list__text">Незаменимое средство, если в семье проблемы с "этим", муж доволен, а я тем более! Эффект не заставит себя ждать.</p>
+              </li>
+              <li class="reviews-list__item">
+                <img src="/src/img/actor.png" alt="Павел Сергеев" width="80" height="80">
+                <span class="reviws-list__name">Павел Сергеев</span>
+                  <p class="reviews-list__text">Средство помогло нормализовать гормональный фон и личную жизнь, но больше всего порадовал натуральный состав.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="promo">
+          <div class="promo__wrapper">
+            <img src="/src/img/doctor.png" width="300" height="300" alt="Изображение доктора медицинских наук">
+          </div>
+        </section>
+      <script src="index.bundle.js"></script>
   </body>
 </html>
