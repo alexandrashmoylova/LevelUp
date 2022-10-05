@@ -1,4 +1,16 @@
+html,
 body {
-    min-width: 320px;
-    margin: 0;
+  background-color: #ebebf1;
+  color: #001f3a;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+  height: 100%;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+  }

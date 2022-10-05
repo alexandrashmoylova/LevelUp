@@ -1,3 +1,9 @@
 .header {
-    padding: 50px;
+    box-sizing: border-box;
+
+    &__wrapper {
+        position: relative;
+        max-height: 100vh;
+        overflow: hidden;
+    }
 }
