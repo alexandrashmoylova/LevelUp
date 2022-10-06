@@ -1,9 +1,5 @@
 .header {
-    box-sizing: border-box;
-
-    &__wrapper {
-        position: relative;
-        max-height: 100vh;
-        overflow: hidden;
-    }
+  &__wrapper {
+    padding-top: 20px;
+  }
 }

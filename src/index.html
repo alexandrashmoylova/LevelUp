@@ -4,129 +4,245 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.scss">
+    <link rel="stylesheet" href="/style.scss" />
     <link href="/normalize.css" rel="stylesheet" />
     <title>Level Up</title>
   </head>
   <body>
-      <header class="header">
-        <div class="header__wrapper">
-            <div class="video">
-              <video class="video__media" preload="auto" autoplay muted loop width="100%" height="auto">
-                <source src="/src/video/abstract.mp4" type="video/mp4">
-                <source src="/src/video/abstract.webm" type="video/webm">
-              </video>
-            </div>
+    <header class="header">
+      <div class="header__wrapper intro">
+        <div class="intro__media">
+          <video
+            class="intro__media-video"
+            preload="auto"
+            autoplay
+            muted
+            loop
+            width="100%"
+            height="auto"
+          >
+            <source src="/src/video/abstract.mp4" type="video/mp4" />
+            <source src="/src/video/abstract.webm" type="video/webm" />
+          </video>
+        </div>
         <div class="hero container">
           <div class="hero__wrapper">
-              <h1 class="hero__title">Level Up</h1>
-              <img src="/src/img/prod.png" alt="Изображение средства для повышения потенции Level Up" width="80" height="100">
-            </div>
+            <h1 class="hero__title">Level Up</h1>
+            <img
+              src="/src/img/prod.png"
+              alt="Изображение средства для повышения потенции Level Up"
+              width="120"
+              height="160"
+            />
+          </div>
           <ul class="hero-list">
             <li class="hero-list__item">
+              <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 40 40" width="16px" height="16px"><path fill="#bae0bd" d="M20,38.5C9.799,38.5,1.5,30.201,1.5,20S9.799,1.5,20,1.5S38.5,9.799,38.5,20S30.201,38.5,20,38.5z"/><path fill="#5e9c76" d="M20,2c9.925,0,18,8.075,18,18s-8.075,18-18,18S2,29.925,2,20S10.075,2,20,2 M20,1 C9.507,1,1,9.507,1,20s8.507,19,19,19s19-8.507,19-19S30.493,1,20,1L20,1z"/><path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" d="M11 20L17 26 30 13"/></svg>              
               <h2 class="hero-list__title">Номер один в России</h2>
             </li>
             <li class="hero-list__item">
+              <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 40 40" width="16px" height="16px"><path fill="#bae0bd" d="M20,38.5C9.799,38.5,1.5,30.201,1.5,20S9.799,1.5,20,1.5S38.5,9.799,38.5,20S30.201,38.5,20,38.5z"/><path fill="#5e9c76" d="M20,2c9.925,0,18,8.075,18,18s-8.075,18-18,18S2,29.925,2,20S10.075,2,20,2 M20,1 C9.507,1,1,9.507,1,20s8.507,19,19,19s19-8.507,19-19S30.493,1,20,1L20,1z"/><path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" d="M11 20L17 26 30 13"/></svg>              
               <h2 class="hero-list__title">Полностью натуральный состав</h2>
             </li>
             <li class="hero-list__item">
+              <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 40 40" width="16px" height="16px"><path fill="#bae0bd" d="M20,38.5C9.799,38.5,1.5,30.201,1.5,20S9.799,1.5,20,1.5S38.5,9.799,38.5,20S30.201,38.5,20,38.5z"/><path fill="#5e9c76" d="M20,2c9.925,0,18,8.075,18,18s-8.075,18-18,18S2,29.925,2,20S10.075,2,20,2 M20,1 C9.507,1,1,9.507,1,20s8.507,19,19,19s19-8.507,19-19S30.493,1,20,1L20,1z"/><path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" d="M11 20L17 26 30 13"/></svg>              
               <h2 class="hero-list__title">Нормализует гормональный фон</h2>
             </li>
-            </ul>
-            <a class="hero-list__button button" href="#">Заказать</a>
+          </ul>
+          <a class="hero-list__button button" href="#">Заказать</a>
         </div>
       </div>
-      </header>
-        <section class="ingredients">
-          <div class="ingredients__wrapper container">
-            <div class="ingredients-list">
-              <div></div>
-              <figure class="ingredients-list__item">
-                <img src="/src/img/ginseng.png" width="100" height="100" alt="Изображение женьшеня">
-                <figcaption class="ingredients-list__title">Экстракт женьшеня</figcaption>
-              </figure>
-              <figure class="ingredients-list__item">
-                <img src="/src/img/juniper.png" width="100" height="100" alt="Изображение можжевельника">
-                <figcaption class="ingredients-list__title">Можжевельника Плоды</figcaption>
-              </figure>
-              <figure class="ingredients-list__item">
-                <img src="/src/img/lemongrass.png" width="100" height="100" alt="Изображение лимонника">
-                <figcaption class="ingredients-list__title">Лимонник</figcaption>
-              </figure>
-              <div class="ingredients-list__img">
-                <img src="/src/img/prod.png" alt="Изображение средства для повышения потенции Level Up" width="300" height="480">
-              </div>
-              <figure class="ingredients-list__item">
-                <img src="/src/img/shitake.png" width="100" height="100" alt="Изображение грибов шитаке">
-                <figcaption class="ingredients-list__title">Шиитаке</figcaption>
-              </figure>
-              <figure class="ingredients-list__item">
-                <img src="/src/img/fern.png" width="100" height="100" alt="Изображение папоротника">
-                <figcaption class="ingredients-list__title">Папоротник</figcaption>
-              </figure>
-              <figure class="ingredients-list__item">
-                <img src="/src/img/nutmeg.png" width="100" height="100" alt="Изображение мускатного ореха">
-                <figcaption class="ingredients-list__title">Концентрат Мускатного Ореха</figcaption>
-              </figure>
-            </div>
-            <a class="ingredients__button button" href="#">Заказать</a>
+    </header>
+    <section class="ingredients">
+      <div class="ingredients__wrapper container">
+        <div class="ingredients-list">
+          <div class="col">
+            <figure class="ingredients-list__item">
+              <img
+                src="/src/img/ginseng.png"
+                width="150"
+                height="150"
+                alt="Изображение женьшеня"
+              />
+              <figcaption class="ingredients-list__title">
+                Экстракт женьшеня
+              </figcaption>
+            </figure>
+            <figure class="ingredients-list__item">
+              <img
+                src="/src/img/juniper.png"
+                width="150"
+                height="150"
+                alt="Изображение можжевельника"
+              />
+              <figcaption class="ingredients-list__title">
+                Можжевельника плоды
+              </figcaption>
+            </figure>
+            <figure class="ingredients-list__item">
+              <img
+                src="/src/img/lemongrass.png"
+                width="150"
+                height="150"
+                alt="Изображение лимонника"
+              />
+              <figcaption class="ingredients-list__title">Лимонник</figcaption>
+            </figure>
           </div>
-        </section>
-        <section class="reviews">
-          <div class="reviews__wrapper container">
-            <ul class="reviews-list">
-              <li class="reviews-list__item">
-                <img src="/src/img/man.png" alt="Андрей Паньков" width="80" height="80">
-                <span class="reviws-list__name">Андрей Паньков</span>
-                  <p class="reviews-list__text">Невероятное средство, помогло мне в трудной ситации, спасибо большое производителю, рекомендую всем!</p>
-              </li>
-              <li class="reviews-list__item">
-                <img src="/src/img/woman.png" alt="Наталья Уткина" width="80" height="80">
-                <span class="reviws-list__name">Наталья Уткина</span>
-                  <p class="reviews-list__text">Незаменимое средство, если в семье проблемы с "этим", муж доволен, а я тем более! Эффект не заставит себя ждать.</p>
-              </li>
-              <li class="reviews-list__item">
-                <img src="/src/img/actor.png" alt="Павел Сергеев" width="80" height="80">
-                <span class="reviws-list__name">Павел Сергеев</span>
-                  <p class="reviews-list__text">Средство помогло нормализовать гормональный фон и личную жизнь, но больше всего порадовал натуральный состав.</p>
-              </li>
-            </ul>
+          <div class="ingredients-list__img">
+            <img
+              src="/src/img/prod.png"
+              alt="Изображение средства для повышения потенции Level Up"
+              width="150"
+              height="200"
+            />
           </div>
-        </section>
-        <section class="promo">
-          <div class="promo__wrapper container">
-            <img src="/src/img/doctor.png" width="300" height="300" alt="Изображение доктора медицинских наук">
-            <div class="promo-description">
-              <h2 class="promo-description__title">Клинически доказано! Уже 10721 мужчин наслаждаются потрясающим эффектом</h2>
-              <p class="promo-description__text">Увеличение главного мужского гормона гарантировано с каждой неделей. Средство нормализует гормональные процессы в организме, за счет чего активируется сперматогенез, улучшается эрекция и повышается сексуальная выносливость.</p>
-            </div>
-            <ul class="promo-list">
-              <li class="promo-list__item">
-                <h3 class="promo-list__title">Естественная выработка тестостерона</h3>
-              </li>
-              <li class="promo-list__item">
-                <h3 class="promo-list__title">Суперэффективный результат в любом возрасте</h3>
-              </li>
-              <li class="promo-list__item">
-                <h3 class="promo-list__title">Оказывает общеукрепляющее действие, снимает физическую и психологическую усталость</h3>
-              </li>
-            </ul>
-            <a class="promo__button button" href="#">Заказать</a>
-          </div>
-        </section>
-        <section class="order">
-          <form class="order-form" action="#" method="post">
-            <div class="order-form__wrapper">
-              <label class="visually-hidden" for="contact-name">Ваше Имя</label>
-              <input class="order-form__input order-form__input--name" type="text" name="contact-name" id="contact-name" placeholder="Ваше Имя">
-            </div>
-            <div class="order-form__wrapper">
-              <label class="visually-hidden" for="contact-tel">Ваше Телефон</label>
-              <input class="order-form__input order-form__input--tel" type="tel" name="contact-tel" id="contact-tel" placeholder="Ваше Телефон">
-            </div>
-          </form>
-          <a class="order__button button" href="#">Заказать</a>
-        </section>
-      <script src="index.bundle.js"></script>
+          <div class="col">
+            <figure class="ingredients-list__item">
+              <img
+                src="/src/img/shitake.png"
+                width="150"
+                height="150"
+                alt="Изображение грибов шитаке"
+              />
+              <figcaption class="ingredients-list__title">Шиитаке</figcaption>
+            </figure>
+            <figure class="ingredients-list__item">
+              <img
+                src="/src/img/fern.png"
+                width="150"
+                height="150"
+                alt="Изображение папоротника"
+              />
+              <figcaption class="ingredients-list__title">Папоротник</figcaption>
+            </figure>
+            <figure class="ingredients-list__item">
+              <img
+                src="/src/img/nutmeg.png"
+                width="150"
+                height="150"
+                alt="Изображение мускатного ореха"
+              />
+              <figcaption class="ingredients-list__title">
+                Экстракт мускатного ореха
+              </figcaption>
+            </figure>   
+          </div>  
+        </div>
+        <a class="ingredients__button button" href="#">Заказать</a>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="reviews__wrapper container">
+        <ul class="reviews-list">
+          <li class="reviews-list__item">
+            <img
+              src="/src/img/man.png"
+              alt="Андрей Паньков"
+              width="80"
+              height="80"
+            />
+            <span class="reviws-list__name">Андрей Паньков</span>
+            <p class="reviews-list__text">
+              Невероятное средство, помогло мне в трудной ситации, спасибо
+              большое производителю, рекомендую всем!
+            </p>
+          </li>
+          <li class="reviews-list__item">
+            <img
+              src="/src/img/woman.png"
+              alt="Наталья Уткина"
+              width="80"
+              height="80"
+            />
+            <span class="reviws-list__name">Наталья Уткина</span>
+            <p class="reviews-list__text">
+              Незаменимое средство, если в семье проблемы с "этим", муж доволен,
+              а я тем более! Эффект не заставит себя ждать.
+            </p>
+          </li>
+          <li class="reviews-list__item">
+            <img
+              src="/src/img/actor.png"
+              alt="Павел Сергеев"
+              width="80"
+              height="80"
+            />
+            <span class="reviws-list__name">Павел Сергеев</span>
+            <p class="reviews-list__text">
+              Средство помогло нормализовать гормональный фон и личную жизнь, но
+              больше всего порадовал натуральный состав.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="promo">
+      <div class="promo__wrapper container">
+        <img
+          src="/src/img/doctor.png"
+          width="300"
+          height="300"
+          alt="Изображение доктора медицинских наук"
+        />
+        <div class="promo-description">
+          <h2 class="promo-description__title">
+            Клинически доказано! Уже 10721 мужчин наслаждаются потрясающим
+            эффектом
+          </h2>
+          <p class="promo-description__text">
+            Увеличение главного мужского гормона гарантировано с каждой неделей.
+            Средство нормализует гормональные процессы в организме, за счет чего
+            активируется сперматогенез, улучшается эрекция и повышается
+            сексуальная выносливость.
+          </p>
+        </div>
+        <ul class="promo-list">
+          <li class="promo-list__item">
+            <h3 class="promo-list__title">
+              Естественная выработка тестостерона
+            </h3>
+          </li>
+          <li class="promo-list__item">
+            <h3 class="promo-list__title">
+              Суперэффективный результат в любом возрасте
+            </h3>
+          </li>
+          <li class="promo-list__item">
+            <h3 class="promo-list__title">
+              Оказывает общеукрепляющее действие, снимает физическую и
+              психологическую усталость
+            </h3>
+          </li>
+        </ul>
+        <a class="promo__button button" href="#">Заказать</a>
+      </div>
+    </section>
+    <section class="order">
+      <form class="order-form" action="#" method="post">
+        <div class="order-form__wrapper">
+          <label class="visually-hidden" for="contact-name">Ваше Имя</label>
+          <input
+            class="order-form__input order-form__input--name"
+            type="text"
+            name="contact-name"
+            id="contact-name"
+            placeholder="Ваше Имя"
+          />
+        </div>
+        <div class="order-form__wrapper">
+          <label class="visually-hidden" for="contact-tel">Ваше Телефон</label>
+          <input
+            class="order-form__input order-form__input--tel"
+            type="tel"
+            name="contact-tel"
+            id="contact-tel"
+            placeholder="Ваше Телефон"
+          />
+        </div>
+      </form>
+      <a class="order__button button" href="#">Заказать</a>
+    </section>
+    <script src="index.bundle.js"></script>
   </body>
 </html>
