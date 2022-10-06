@@ -1,0 +1,25 @@
+.promo {
+  background: linear-gradient(
+    225deg,
+    rgb(229, 216, 192),
+    rgb(228, 238, 238) 59%
+  );
+
+  &__wrapper {
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+
+  &__img {
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    margin-top: 20px;
+  }
+}
