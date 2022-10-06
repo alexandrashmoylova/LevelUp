@@ -1,20 +1,12 @@
-const buttonLeft = document.querySelector(".slider-left");
-const buttonRight = document.querySelector(".slider-right");
-const slides = document.querySelectorAll("reviews-list__item");
+const buttonLeft = document.querySelector(".slider__left");
+const buttonRight = document.querySelector(".slider__right");
+const slides = document.querySelectorAll(".reviews-list__item");
 
 let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlide() {
   showSlides((slideIndex += 1));
-}
-
-// function previousSlide() {
-//     showSlides(slideIndex -= 1);
-// }
-
-function currentSlide(n) {
-  showSlides((slideIndex = n));
 }
 
 function showSlides(n) {
@@ -32,5 +24,13 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
 }
 
-buttonLeft.addEventListener("click", plusSlide(-1));
-buttonRight.addEventListener("click", plusSlide(1));
+const togglePreviousSlide = () => {
+  plusSlide(-1);
+};
+
+const toggleNextSlide = () => {
+  plusSlide(1);
+};
+
+buttonLeft.addEventListener("click", togglePreviousSlide);
+buttonRight.addEventListener("click", togglePreviousSlide);
