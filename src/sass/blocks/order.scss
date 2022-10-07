@@ -9,23 +9,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
     padding-top: 30px;
     padding-bottom: 30px;
+
+    @media (min-width: 768px) {
+      padding-top: 60px;
+      padding-bottom: 30px;
+    }
   }
 
   &__title {
-      margin: 0;
-      margin-bottom: 30px;
+    margin: 0;
   }
 
   &__text {
-      color: #8f0622;
-      font-size: 25px;
-      line-height: 1;
-      margin: 0;
-      margin-bottom: 30px;
-      text-transform: uppercase;
-      text-align: center;
+    color: #8f0622;
+    font-size: 25px;
+    line-height: 1;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
   }
 }

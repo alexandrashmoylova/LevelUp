@@ -10,20 +10,26 @@
 
   @media (min-width: 768px) {
     flex-direction: row;
+    gap: 30px;
   }
 
   &__item {
     background-color: #e3d5c1;
-    box-shadow: 38px -30px 17px -20px rgba(120, 106, 64, 0.2);
+    box-shadow: 31px -15px 21px 2px #857f7133;
     border-radius: 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 15px;
     height: 100px;
     padding: 10px;
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+        margin-bottom: 0;
     }
   }
 
