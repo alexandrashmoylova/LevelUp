@@ -5,7 +5,6 @@
   align-items: flex-start;
   margin: 0;
   padding: 0;
-  margin-bottom: 5px;
 
   &__title {
     font-size: 18px;
@@ -19,8 +18,16 @@
     align-items: center;
     margin-bottom: 13px;
 
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     svg {
       margin-right: 15px;
     }
+  }
+
+  &__button {
+    margin-top: 30px;
   }
 }

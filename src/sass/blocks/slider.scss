@@ -1,25 +1,17 @@
 .slider {
-    min-height: 30px;
     display: flex;
     justify-content: space-between;
+    min-height: 30px;
     position: relative;
 
   &__button {
-    cursor: pointer;
-    width: auto;
-    padding: 5px;
-    color: white;
-    transition: 0.6s ease;
-    border-radius: 3px;
     background-color: #696565;
-  }
-
-  &__left {
-      left: 0;
-  }
-
-  &__right {
-    right: 0;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    padding: 6px 5px 4px 5px;
+    transition: 0.6s ease;
+    width: auto;
   }
 
   &__right:hover,

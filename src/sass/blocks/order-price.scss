@@ -1,0 +1,42 @@
+.order-price {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  &__old {
+    font-size: 25px;
+    line-height: calc(30 / 25);
+    position: relative;
+
+    &::before {
+      content: "";
+      background-color: #f80032;
+      height: 4px;
+      width: 90px;
+      position: absolute;
+      left: -4px;
+      top: 13px;
+      transform: rotate(25deg);
+    }
+  }
+
+  &__new {
+    font-size: 55px;
+    line-height: 1;
+    text-decoration: underline;
+    opacity: 0;
+    transition: 1s;
+    animation: show 2s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+  }
+
+  @keyframes show {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

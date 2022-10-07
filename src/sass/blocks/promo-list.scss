@@ -2,15 +2,24 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 
   &__item {
     background-color: #e3d5c1;
+    box-shadow: 38px -30px 17px -20px rgba(120, 106, 64, 0.2);
     border-radius: 10px;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center;
     margin-bottom: 15px;
-    min-height: 80px;
+    height: 100px;
     padding: 10px;
 
     &:last-child {

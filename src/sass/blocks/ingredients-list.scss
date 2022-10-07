@@ -22,6 +22,11 @@
         font-size: 15px;
         line-height: 1;
         text-align: center;
+
+        @media (min-width: 768px) {
+           font-size: 18px;
+           line-height: 1;
+          }
     }
 
     &__img {
