@@ -5,381 +5,385 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.scss" />
-    <link href="/normalize.css" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet" />
     <title>Level Up</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header__wrapper intro">
-        <div class="intro__media">
-          <video
-            class="intro__media-video"
-            preload="auto"
-            autoplay
-            muted
-            loop
-            width="100%"
-            height="auto"
-          >
-            <source src="/src/video/abstract.mp4" type="video/mp4" />
-            <source src="/src/video/abstract.webm" type="video/webm" />
-          </video>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__wrapper intro">
+          <div class="intro__media">
+            <video
+              class="intro__media-video"
+              preload="auto"
+              autoplay
+              muted
+              loop
+            >
+              <source src="src/video/abstract.mp4" type="video/mp4" />
+              <source src="src/video/abstract.webm" type="video/webm" />
+            </video>
+          </div>
+          <div class="hero container">
+            <div class="hero__wrapper">
+              <h1 class="hero__title title">Level Up</h1>
+              <div class="block-img">
+                <img
+                  src="src/img/prod.png"
+                  alt="Изображение средства для повышения потенции Level Up"
+                  width="120"
+                  height="160"
+                />
+              </div>
+            </div>
+            <ul class="hero-list">
+              <li class="hero-list__item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 40 40"
+                  width="16px"
+                  height="16px"
+                >
+                  <path
+                    fill="#bae0bd"
+                    d="M20,38.5C9.799,38.5,1.5,30.201,1.5,20S9.799,1.5,20,1.5S38.5,9.799,38.5,20S30.201,38.5,20,38.5z"
+                  />
+                  <path
+                    fill="#5e9c76"
+                    d="M20,2c9.925,0,18,8.075,18,18s-8.075,18-18,18S2,29.925,2,20S10.075,2,20,2 M20,1 C9.507,1,1,9.507,1,20s8.507,19,19,19s19-8.507,19-19S30.493,1,20,1L20,1z"
+                  />
+                  <path
+                    fill="none"
+                    stroke="#fff"
+                    stroke-miterlimit="10"
+                    stroke-width="2"
+                    d="M11 20L17 26 30 13"
+                  />
+                </svg>
+                <h2 class="hero-list__title">Номер один в России</h2>
+              </li>
+              <li class="hero-list__item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 40 40"
+                  width="16px"
+                  height="16px"
+                >
+                  <path
+                    fill="#bae0bd"
+                    d="M20,38.5C9.799,38.5,1.5,30.201,1.5,20S9.799,1.5,20,1.5S38.5,9.799,38.5,20S30.201,38.5,20,38.5z"
+                  />
+                  <path
+                    fill="#5e9c76"
+                    d="M20,2c9.925,0,18,8.075,18,18s-8.075,18-18,18S2,29.925,2,20S10.075,2,20,2 M20,1 C9.507,1,1,9.507,1,20s8.507,19,19,19s19-8.507,19-19S30.493,1,20,1L20,1z"
+                  />
+                  <path
+                    fill="none"
+                    stroke="#fff"
+                    stroke-miterlimit="10"
+                    stroke-width="2"
+                    d="M11 20L17 26 30 13"
+                  />
+                </svg>
+                <h2 class="hero-list__title">Полностью натуральный состав</h2>
+              </li>
+              <li class="hero-list__item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 40 40"
+                  width="16px"
+                  height="16px"
+                >
+                  <path
+                    fill="#bae0bd"
+                    d="M20,38.5C9.799,38.5,1.5,30.201,1.5,20S9.799,1.5,20,1.5S38.5,9.799,38.5,20S30.201,38.5,20,38.5z"
+                  />
+                  <path
+                    fill="#5e9c76"
+                    d="M20,2c9.925,0,18,8.075,18,18s-8.075,18-18,18S2,29.925,2,20S10.075,2,20,2 M20,1 C9.507,1,1,9.507,1,20s8.507,19,19,19s19-8.507,19-19S30.493,1,20,1L20,1z"
+                  />
+                  <path
+                    fill="none"
+                    stroke="#fff"
+                    stroke-miterlimit="10"
+                    stroke-width="2"
+                    d="M11 20L17 26 30 13"
+                  />
+                </svg>
+                <h2 class="hero-list__title">Нормализует гормональный фон</h2>
+              </li>
+            </ul>
+            <a class="hero__button button" href="#order">Заказать</a>
+          </div>
         </div>
-        <div class="hero container">
-          <div class="hero__wrapper">
-            <h1 class="hero__title title">Level Up</h1>
-            <div class="block-img">
+      </header>
+      <section class="ingredients">
+        <div class="ingredients__wrapper container">
+          <div class="ingredients-list">
+            <div class="col">
+              <figure class="ingredients-list__item">
+                <img
+                  src="src/img/ginseng.png"
+                  width="150"
+                  height="150"
+                  alt="Изображение женьшеня"
+                />
+                <figcaption class="ingredients-list__title">
+                  Экстракт женьшеня
+                </figcaption>
+              </figure>
+              <figure class="ingredients-list__item">
+                <img
+                  src="src/img/juniper.png"
+                  width="150"
+                  height="150"
+                  alt="Изображение можжевельника"
+                />
+                <figcaption class="ingredients-list__title">
+                  Можжевельника плоды
+                </figcaption>
+              </figure>
+              <figure class="ingredients-list__item">
+                <img
+                  src="src/img/lemongrass.png"
+                  width="150"
+                  height="150"
+                  alt="Изображение лимонника"
+                />
+                <figcaption class="ingredients-list__title">
+                  Лимонник
+                </figcaption>
+              </figure>
+            </div>
+            <div class="ingredients-list__img block-img">
               <img
-                src="/src/img/prod.png"
+                src="src/img/prod.png"
                 alt="Изображение средства для повышения потенции Level Up"
-                width="120"
-                height="160"
+                width="150"
+                height="200"
               />
             </div>
+            <div class="col">
+              <figure class="ingredients-list__item">
+                <img
+                  src="src/img/shitake.png"
+                  width="150"
+                  height="150"
+                  alt="Изображение грибов шитаке"
+                />
+                <figcaption class="ingredients-list__title">Шиитаке</figcaption>
+              </figure>
+              <figure class="ingredients-list__item">
+                <img
+                  src="src/img/fern.png"
+                  width="150"
+                  height="150"
+                  alt="Изображение папоротника"
+                />
+                <figcaption class="ingredients-list__title">
+                  Папоротник
+                </figcaption>
+              </figure>
+              <figure class="ingredients-list__item">
+                <img
+                  src="src/img/nutmeg.png"
+                  width="150"
+                  height="150"
+                  alt="Изображение мускатного ореха"
+                />
+                <figcaption class="ingredients-list__title">
+                  Экстракт мускатного ореха
+                </figcaption>
+              </figure>
+            </div>
           </div>
-          <ul class="hero-list">
-            <li class="hero-list__item">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 40 40"
-                width="16px"
-                height="16px"
-              >
-                <path
-                  fill="#bae0bd"
-                  d="M20,38.5C9.799,38.5,1.5,30.201,1.5,20S9.799,1.5,20,1.5S38.5,9.799,38.5,20S30.201,38.5,20,38.5z"
-                />
-                <path
-                  fill="#5e9c76"
-                  d="M20,2c9.925,0,18,8.075,18,18s-8.075,18-18,18S2,29.925,2,20S10.075,2,20,2 M20,1 C9.507,1,1,9.507,1,20s8.507,19,19,19s19-8.507,19-19S30.493,1,20,1L20,1z"
-                />
-                <path
-                  fill="none"
-                  stroke="#fff"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
-                  d="M11 20L17 26 30 13"
-                />
-              </svg>
-              <h2 class="hero-list__title">Номер один в России</h2>
-            </li>
-            <li class="hero-list__item">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 40 40"
-                width="16px"
-                height="16px"
-              >
-                <path
-                  fill="#bae0bd"
-                  d="M20,38.5C9.799,38.5,1.5,30.201,1.5,20S9.799,1.5,20,1.5S38.5,9.799,38.5,20S30.201,38.5,20,38.5z"
-                />
-                <path
-                  fill="#5e9c76"
-                  d="M20,2c9.925,0,18,8.075,18,18s-8.075,18-18,18S2,29.925,2,20S10.075,2,20,2 M20,1 C9.507,1,1,9.507,1,20s8.507,19,19,19s19-8.507,19-19S30.493,1,20,1L20,1z"
-                />
-                <path
-                  fill="none"
-                  stroke="#fff"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
-                  d="M11 20L17 26 30 13"
-                />
-              </svg>
-              <h2 class="hero-list__title">Полностью натуральный состав</h2>
-            </li>
-            <li class="hero-list__item">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 40 40"
-                width="16px"
-                height="16px"
-              >
-                <path
-                  fill="#bae0bd"
-                  d="M20,38.5C9.799,38.5,1.5,30.201,1.5,20S9.799,1.5,20,1.5S38.5,9.799,38.5,20S30.201,38.5,20,38.5z"
-                />
-                <path
-                  fill="#5e9c76"
-                  d="M20,2c9.925,0,18,8.075,18,18s-8.075,18-18,18S2,29.925,2,20S10.075,2,20,2 M20,1 C9.507,1,1,9.507,1,20s8.507,19,19,19s19-8.507,19-19S30.493,1,20,1L20,1z"
-                />
-                <path
-                  fill="none"
-                  stroke="#fff"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
-                  d="M11 20L17 26 30 13"
-                />
-              </svg>
-              <h2 class="hero-list__title">Нормализует гормональный фон</h2>
-            </li>
-          </ul>
-          <a class="hero-list__button button" href="#order">Заказать</a>
+          <a class="ingredients__button button" href="#order">Заказать</a>
         </div>
-      </div>
-    </header>
-    <section class="ingredients">
-      <div class="ingredients__wrapper container">
-        <div class="ingredients-list">
-          <div class="col">
-            <figure class="ingredients-list__item">
-              <img
-                src="/src/img/ginseng.png"
-                width="150"
-                height="150"
-                alt="Изображение женьшеня"
-              />
-              <figcaption class="ingredients-list__title">
-                Экстракт женьшеня
-              </figcaption>
-            </figure>
-            <figure class="ingredients-list__item">
-              <img
-                src="/src/img/juniper.png"
-                width="150"
-                height="150"
-                alt="Изображение можжевельника"
-              />
-              <figcaption class="ingredients-list__title">
-                Можжевельника плоды
-              </figcaption>
-            </figure>
-            <figure class="ingredients-list__item">
-              <img
-                src="/src/img/lemongrass.png"
-                width="150"
-                height="150"
-                alt="Изображение лимонника"
-              />
-              <figcaption class="ingredients-list__title">Лимонник</figcaption>
-            </figure>
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper container">
+          <div class="reviews-list">
+            <div class="reviews-list__item">
+              <div class="reviews-list__wrapper">
+                <img
+                  src="src/img/man.png"
+                  alt="Андрей Паньков"
+                  width="80"
+                  height="80"
+                />
+                <span class="reviews-list__name">Андрей Паньков</span>
+                <p class="reviews-list__text">
+                  Невероятное средство, помогло мне в трудной ситации, спасибо
+                  большое производителю, рекомендую всем!
+                </p>
+              </div>
+            </div>
+            <div class="reviews-list__item">
+              <div class="reviews-list__wrapper">
+                <img
+                  src="src/img/woman.png"
+                  alt="Наталья Уткина"
+                  width="80"
+                  height="80"
+                />
+                <span class="reviews-list__name">Наталья Уткина</span>
+                <p class="reviews-list__text">
+                  Незаменимое средство, если в семье проблемы с "этим", муж
+                  доволен, а я тем более! Эффект не заставит себя ждать.
+                </p>
+              </div>
+            </div>
+            <div class="reviews-list__item">
+              <div class="reviews-list__wrapper">
+                <img
+                  src="src/img/actor.png"
+                  alt="Павел Сергеев"
+                  width="80"
+                  height="80"
+                />
+                <span class="reviews-list__name">Павел Сергеев</span>
+                <p class="reviews-list__text">
+                  Средство помогло нормализовать гормональный фон и личную
+                  жизнь, но больше всего порадовал натуральный состав.
+                </p>
+              </div>
+            </div>
+            <div class="slider">
+              <a class="reviews__slider slider__button slider__left">
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.125 15.75L6.875 10.5L12.125 5.25"
+                    stroke="white"
+                    stroke-width="1.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a class="reviews__slider slider__button slider__right">
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.875 15.75L14.125 10.5L8.875 5.25"
+                    stroke="white"
+                    stroke-width="1.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
-          <div class="ingredients-list__img block-img">
+        </div>
+      </section>
+      <section class="promo">
+        <div class="promo__wrapper container">
+          <div class="promo__img">
             <img
-              src="/src/img/prod.png"
-              alt="Изображение средства для повышения потенции Level Up"
-              width="150"
-              height="200"
+              src="src/img/doctor.png"
+              width="300"
+              height="300"
+              alt="Изображение доктора медицинских наук"
             />
           </div>
-          <div class="col">
-            <figure class="ingredients-list__item">
-              <img
-                src="/src/img/shitake.png"
-                width="150"
-                height="150"
-                alt="Изображение грибов шитаке"
-              />
-              <figcaption class="ingredients-list__title">Шиитаке</figcaption>
-            </figure>
-            <figure class="ingredients-list__item">
-              <img
-                src="/src/img/fern.png"
-                width="150"
-                height="150"
-                alt="Изображение папоротника"
-              />
-              <figcaption class="ingredients-list__title">
-                Папоротник
-              </figcaption>
-            </figure>
-            <figure class="ingredients-list__item">
-              <img
-                src="/src/img/nutmeg.png"
-                width="150"
-                height="150"
-                alt="Изображение мускатного ореха"
-              />
-              <figcaption class="ingredients-list__title">
-                Экстракт мускатного ореха
-              </figcaption>
-            </figure>
+          <div class="promo-description">
+            <h2 class="promo-description__title">
+              Клинически доказано! Уже 10721 мужчин наслаждаются потрясающим
+              эффектом
+            </h2>
+            <p class="promo-description__text">
+              Увеличение главного мужского гормона гарантировано с каждой
+              неделей. Средство нормализует гормональные процессы в организме,
+              за счет чего активируется сперматогенез, улучшается эрекция и
+              повышается сексуальная выносливость.
+            </p>
           </div>
+          <ul class="promo-list">
+            <li class="promo-list__item">
+              <h3 class="promo-list__title">
+                Естественная выработка тестостерона, повышение либидо
+              </h3>
+            </li>
+            <li class="promo-list__item">
+              <h3 class="promo-list__title">
+                Суперэффективный результат в любом возрасте
+              </h3>
+            </li>
+            <li class="promo-list__item">
+              <h3 class="promo-list__title">
+                Cнимает физическую и психологическую усталость
+              </h3>
+            </li>
+          </ul>
+          <a class="promo__button button" href="#order">Заказать</a>
         </div>
-        <a class="ingredients__button button" href="#order">Заказать</a>
-      </div>
-    </section>
-    <section class="reviews">
-      <div class="reviews__wrapper container">
-        <div class="reviews-list">
-          <div class="reviews-list__item">
-            <div class="reviews-list__wrapper">
-              <img
-                src="/src/img/man.png"
-                alt="Андрей Паньков"
-                width="80"
-                height="80"
-              />
-              <span class="reviews-list__name">Андрей Паньков</span>
-              <p class="reviews-list__text">
-                Невероятное средство, помогло мне в трудной ситации, спасибо
-                большое производителю, рекомендую всем!
-              </p>
-            </div>
+      </section>
+      <section class="order">
+        <div class="order__wrapper container">
+          <h2 class="order__title title">Level Up</h2>
+          <p class="order__text">Успейте приобрести по акции!</p>
+          <div class="timer">
+            <span class="timer__counter"></span>
           </div>
-          <div class="reviews-list__item">
-            <div class="reviews-list__wrapper">
-              <img
-                src="/src/img/woman.png"
-                alt="Наталья Уткина"
-                width="80"
-                height="80"
-              />
-              <span class="reviews-list__name">Наталья Уткина</span>
-              <p class="reviews-list__text">
-                Незаменимое средство, если в семье проблемы с "этим", муж
-                доволен, а я тем более! Эффект не заставит себя ждать.
-              </p>
-            </div>
-          </div>
-          <div class="reviews-list__item">
-            <div class="reviews-list__wrapper">
-              <img
-                src="/src/img/actor.png"
-                alt="Павел Сергеев"
-                width="80"
-                height="80"
-              />
-              <span class="reviews-list__name">Павел Сергеев</span>
-              <p class="reviews-list__text">
-                Средство помогло нормализовать гормональный фон и личную жизнь,
-                но больше всего порадовал натуральный состав.
-              </p>
-            </div>
-          </div>
-          <div class="slider">
-            <a class="reviews__slider slider__button slider__left">
-              <svg
-                width="21"
-                height="21"
-                viewBox="0 0 21 21"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12.125 15.75L6.875 10.5L12.125 5.25"
-                  stroke="white"
-                  stroke-width="1.75"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+          <div class="order-col">
+            <div class="order-row">
+              <div class="block-img">
+                <img
+                  src="src/img/prod.png"
+                  alt="Изображение средства для повышения потенции Level Up"
+                  width="120"
+                  height="160"
                 />
-              </svg>
-            </a>
-            <a class="reviews__slider slider__button slider__right">
-              <svg
-                width="21"
-                height="21"
-                viewBox="0 0 21 21"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.875 15.75L14.125 10.5L8.875 5.25"
-                  stroke="white"
-                  stroke-width="1.75"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+              </div>
+              <div class="order-price">
+                <span class="order-price__old">1359 р.</span>
+                <span class="order-price__new">999 p.</span>
+              </div>
+            </div>
+            <form class="order-form" id="order" action="#" method="post">
+              <div class="order-form__wrapper" data-title="Александр">
+                <label class="visually-hidden" for="contact-name"
+                  >Ваше Имя</label
+                >
+                <input
+                  class="order-form__input order-form__input--name"
+                  type="text"
+                  name="contact-name"
+                  id="contact-name"
+                  placeholder="Ваше Имя"
                 />
-              </svg>
-            </a>
+              </div>
+              <div class="order-form__wrapper" data-title="89999999999">
+                <label class="visually-hidden" for="contact-tel"
+                  >Ваше Телефон</label
+                >
+                <input
+                  class="order-form__input order-form__input--tel"
+                  type="number"
+                  step="1"
+                  min="1"
+                  max="11"
+                  name="contact-tel"
+                  id="contact-tel"
+                  placeholder="Ваш Телефон"
+                />
+              </div>
+              <a class="order-form__button button" href="#">Заказать</a>
+            </form>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="promo">
-      <div class="promo__wrapper container">
-        <div class="promo__img">
-          <img
-            src="/src/img/doctor.png"
-            width="300"
-            height="300"
-            alt="Изображение доктора медицинских наук"
-          />
-        </div>
-        <div class="promo-description">
-          <h2 class="promo-description__title">
-            Клинически доказано! Уже 10721 мужчин наслаждаются потрясающим
-            эффектом
-          </h2>
-          <p class="promo-description__text">
-            Увеличение главного мужского гормона гарантировано с каждой неделей.
-            Средство нормализует гормональные процессы в организме, за счет чего
-            активируется сперматогенез, улучшается эрекция и повышается
-            сексуальная выносливость.
-          </p>
-        </div>
-        <ul class="promo-list">
-          <li class="promo-list__item">
-            <h3 class="promo-list__title">
-              Естественная выработка тестостерона, повышение либидо
-            </h3>
-          </li>
-          <li class="promo-list__item">
-            <h3 class="promo-list__title">
-              Суперэффективный результат в любом возрасте
-            </h3>
-          </li>
-          <li class="promo-list__item">
-            <h3 class="promo-list__title">
-              Cнимает физическую и психологическую усталость
-            </h3>
-          </li>
-        </ul>
-        <a class="promo__button button" href="#order">Заказать</a>
-      </div>
-    </section>
-    <section class="order">
-      <div class="order__wrapper container">
-        <h2 class="order__title title">Level Up</h2>
-        <p class="order__text">Успейте приобрести по акции!</p>
-        <div class="timer">
-          <span class="timer__counter"></span>
-        </div>
-        <div class="order-col">
-          <div class="order-row">
-            <div class="block-img">
-              <img
-                src="/src/img/prod.png"
-                alt="Изображение средства для повышения потенции Level Up"
-                width="120"
-                height="160"
-              />
-            </div>
-            <div class="order-price">
-              <span class="order-price__old">1359 р.</span>
-              <span class="order-price__new">999 p.</span>
-            </div>
-          </div>
-          <form class="order-form" id="order" action="#" method="post">
-            <div class="order-form__wrapper" data-title="Александр">
-              <label class="visually-hidden" for="contact-name">Ваше Имя</label>
-              <input
-                class="order-form__input order-form__input--name"
-                type="text"
-                name="contact-name"
-                id="contact-name"
-                placeholder="Ваше Имя"
-              />
-            </div>
-            <div class="order-form__wrapper" data-title="89999999999">
-              <label class="visually-hidden" for="contact-tel"
-                >Ваше Телефон</label
-              >
-              <input
-                class="order-form__input order-form__input--tel"
-                type="number"
-                step="1"
-                min="1"
-                max="11"
-                name="contact-tel"
-                id="contact-tel"
-                placeholder="Ваше Телефон"
-              />
-            </div>
-            <a class="order-form__button button" href="#">Заказать</a>
-          </form>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </body>
 </html>

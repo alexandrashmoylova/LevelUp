@@ -1,5 +1,10 @@
 .order-col {
   display: flex;
+  flex-direction: column;
   gap: 50px;
   align-items: center;
+
+  @media (min-width: 1200px) {
+    flex: row;
+  }
 }
