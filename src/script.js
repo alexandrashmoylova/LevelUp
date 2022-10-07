@@ -4,16 +4,6 @@ const slides = document.querySelectorAll(".reviews-list__item");
 const countDown = document.querySelector(".timer__counter");
 let time = 1800;
 
-setInterval(updateCountDown, 1000);
-
-function updateCountDown() {
-    const minutes = Math.floor(time / 60);
-    let seconds = time % 60;
-    seconds = seconds < 10 ? "0" + seconds : seconds;
-    countDown.innerHTML = `${minutes} : ${seconds}`;
-    time--;
-}
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -47,4 +37,12 @@ const toggleNextSlide = () => {
 buttonLeft.addEventListener("click", togglePreviousSlide);
 buttonRight.addEventListener("click", togglePreviousSlide);
 
+setInterval(updateCountDown, 1000);
 
+function updateCountDown() {
+  const minutes = Math.floor(time / 60);
+  let seconds = time % 60;
+  seconds = seconds < 10 ? "0" + seconds : seconds;
+  countDown.innerHTML = `${minutes} : ${seconds}`;
+  time--;
+}

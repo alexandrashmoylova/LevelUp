@@ -1,23 +1,26 @@
 .reviews-list {
   max-width: 100%;
-  height: 280px;
   position: relative;
   margin: auto;
   min-height: 100%;
   overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   &__wrapper {
     display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
 
-  img {
+    @media (min-width: 1200px) {
+      flex-direction: column;
+    }
+
+    img {
       border-radius: 40%;
+    }
   }
-}
 
   &__item {
     animation-name: fade;
@@ -27,20 +30,25 @@
   }
 
   &__name {
-      font-size: 14px;
-      margin-left: 30px;
+    font-size: 14px;
+    margin-left: 30px;
+
+    @media (min-width: 1200px) {
+      margin: 20px 0 0;
+    }
   }
 
   &__text {
-      font-size: 15px;
-      line-height: calc(16/ 15);
-      margin: 0;
-      margin-top: 30px;
-      padding: 10px;
+    font-size: 15px;
+    line-height: calc(16 / 15);
+    margin: 0;
+    margin-top: 30px;
+    padding: 10px;
 
-      @media (min-width:768px) {
-          padding: 30px;
-      }
+    @media (min-width: 768px) {
+      font-size: 18px;
+      padding: 30px;
+    }
   }
 }
 
