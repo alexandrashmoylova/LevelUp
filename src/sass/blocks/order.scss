@@ -31,4 +31,13 @@
     text-transform: uppercase;
     text-align: center;
   }
+
+  &__img {
+    img {
+      @media (min-width: 768px) {
+        width: 200px;
+        height: 300px;
+      }
+    }
+  }
 }
